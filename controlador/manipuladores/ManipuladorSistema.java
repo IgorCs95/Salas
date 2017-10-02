@@ -1,7 +1,7 @@
 package manipuladores;
 
 import java.util.ArrayList;
-
+import java.util.Date;
 
 import entidades.Alocar;
 import entidades.Evento;
@@ -65,7 +65,7 @@ public class ManipuladorSistema {
 
 		Alocar aloc = new Alocar(sala.getId(), evento.getId());
 
-		if (evento.getInicio().getDay() == 0) {
+		if (new Date(evento.getInicio()).getDay() == 0) {
 			throw new RoomsAllocationException("As salas nao sao alocadas nos fins de semana.");
 		}
 

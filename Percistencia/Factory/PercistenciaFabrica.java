@@ -16,7 +16,7 @@ public class PercistenciaFabrica extends PercistenciaFactory{
 
 		switch (tipo) {
 		case "Sala":
-			return new PercistenciaSala();
+			return PercistenciaSala.getInstance();
 
 		case "Evento":
 			return new PercistenciaEvento();

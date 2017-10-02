@@ -1,0 +1,71 @@
+<list>
+  <entidades.Sala>
+    <id>SA-02</id>
+    <tipo>Inteligente</tipo>
+    <finalidade>Sala de Aula</finalidade>
+    <apelido>Masmorra</apelido>
+    <capacidade>15</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>SA-03</id>
+    <tipo>Inteligente</tipo>
+    <finalidade>Sala de Aula</finalidade>
+    <apelido>salinha</apelido>
+    <capacidade>15</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>SA-04</id>
+    <tipo>Videoconferencia</tipo>
+    <finalidade>Sala de Aula</finalidade>
+    <capacidade>20</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>LAB-01</id>
+    <tipo>quimica</tipo>
+    <finalidade>Laboratorio</finalidade>
+    <capacidade>25</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>LAB-02</id>
+    <tipo>computacao</tipo>
+    <finalidade>Laboratorio</finalidade>
+    <apelido>Laboratorio da pos graduacao</apelido>
+    <capacidade>25</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>LAB-04</id>
+    <tipo>fisica</tipo>
+    <finalidade>Laboratorio</finalidade>
+    <apelido>Laboratorio de Computacao Pervasiva</apelido>
+    <capacidade>25</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>LAB-05</id>
+    <tipo>biologia</tipo>
+    <finalidade>Laboratorio</finalidade>
+    <apelido>Laboratorio de Visao Computacional</apelido>
+    <capacidade>25</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>SC-01</id>
+    <tipo>Normal</tipo>
+    <finalidade>Sala de Conferencia</finalidade>
+    <capacidade>30</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+  <entidades.Sala>
+    <id>SC-02</id>
+    <tipo>Videoconferencia</tipo>
+    <finalidade>Sala de Conferencia</finalidade>
+    <apelido>Auditorio Mario Toyotaro Hattori</apelido>
+    <capacidade>10</capacidade>
+    <disponibilidade>false</disponibilidade>
+  </entidades.Sala>
+</list>

@@ -11,7 +11,9 @@ public class PercistenciaSala implements Percistencias<Sala>{
 	private PersistenciaXml<Sala> salas = new PersistenciaXml<Sala>();
 	private String urlSalas="Salas.xml";
 	
-	public PercistenciaSala() {
+	private static PercistenciaSala singleton;
+	
+	private PercistenciaSala() {
 		listaSalas = salas.recuperar(urlSalas);
 	}
 	
@@ -56,6 +58,20 @@ public class PercistenciaSala implements Percistencias<Sala>{
 
 	public void excluirAlocarEvento(String IdObjeto) {
 		
+	}
+	
+	public static PercistenciaSala getInstance(){
+		if(singleton!=null){
+			return singleton;
+		}else{
+			synchronized (PercistenciaSala.class) {
+				if(singleton!=null){
+					return singleton;
+				}else
+					return new PercistenciaSala();
+				
+			}
+		}
 	}
 
 

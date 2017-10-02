@@ -10,7 +10,7 @@ public class Evento {
 
 	private String id, nome, area, contato;
 
-	private Date inicio, fim;
+	private long inicio, fim;
 
 	private int repeticao;
 
@@ -35,7 +35,7 @@ public class Evento {
 	 * @param repeticoes
 	 *            Numer de repetições semanais.
 	 */
-	public Evento(String id, String nome, Date inicio, Date fim, String area, String contato, int repeticoes) {
+	public Evento(String id, String nome, long inicio, long fim, String area, String contato, int repeticoes) {
 		setId(id);
 		setNome(nome);
 		setInicio(inicio);
@@ -62,7 +62,7 @@ public class Evento {
 	 * @param contato
 	 *            Contato da Pessa Responsavel.
 	 */
-	public Evento(String id, String nome, Date inicio, Date fim, String area, String contato) {
+	public Evento(String id, String nome, long inicio, long fim, String area, String contato) {
 		setId(id);
 		setNome(nome);
 		setInicio(inicio);
@@ -106,19 +106,19 @@ public class Evento {
 		this.contato = contato;
 	}
 
-	public Date getInicio() {
+	public long getInicio() {
 		return inicio;
 	}
 
-	public void setInicio(Date inicio) {
+	public void setInicio(long inicio) {
 		this.inicio = inicio;
 	}
 
-	public Date getFim() {
+	public long getFim() {
 		return fim;
 	}
 
-	public void setFim(Date fim) {
+	public void setFim(long fim) {
 		this.fim = fim;
 	}
 

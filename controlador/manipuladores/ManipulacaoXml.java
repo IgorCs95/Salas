@@ -24,12 +24,10 @@ public class ManipulacaoXml {
 	Percistencias<Sala> salas = loja.pedirObjeto("Sala");
 	Percistencias<Alocar> alocar = loja.pedirObjeto("Alocar");
 
+	private static ManipulacaoXml xml;
 	
-	
-
-	/** construtor da classe sem parametros, tambem faz recuperar os arquivos xml para que possam ser trabalhados os objetos.
-	 */
-	
+	private  ManipulacaoXml() {
+	}
 
 	/**Salvar um objeto sala pasado como parametro deste metodo no arquivo Salas.xml 
 	 * @param sala sala que devera ser salva
@@ -124,5 +122,17 @@ public class ManipulacaoXml {
 	 */
 	public ArrayList<Alocar> todasAlocacoes(){
 		return alocar.todos();
+	}
+	
+	public static ManipulacaoXml getInstace(){
+		if(xml!=null){
+			return xml;
+		}else
+			synchronized (ManipulacaoXml.class) {
+				if(xml!=null){
+					return xml;
+				}else
+					return new ManipulacaoXml();
+			}
 	}
 }

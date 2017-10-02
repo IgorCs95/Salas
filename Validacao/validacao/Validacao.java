@@ -64,8 +64,8 @@ public class Validacao {
 		try {
 			horaraioDate = new Date(formato.parse(horario).getTime());
 
-			if (horaraioDate.getTime() >= evento.getInicio().getTime()
-					&& horaraioDate.getTime() <= evento.getFim().getTime()) {
+			if (horaraioDate.getTime() >= evento.getInicio()
+					&& horaraioDate.getTime() <= evento.getFim()) {
 
 				return true;
 			}
@@ -127,7 +127,7 @@ public class Validacao {
 			throw new RoomsAllocationException("Escritorios nao sao escalonaveis.");
 		}
 
-		if (evento.getInicio().getDay() == 0) {
+		if (new Date(evento.getInicio()).getDay() == 0) {
 			throw new RoomsAllocationException("As salas nao sao alocadas nos fins de semana.");
 		}
 
@@ -161,8 +161,8 @@ public class Validacao {
 				Calendar inicio = Calendar.getInstance();
 				Calendar fim = Calendar.getInstance();
 
-				inicio.setTime(validar.recuperarEvento(alocar.getIdEvento()).getInicio());
-				fim.setTime(validar.recuperarEvento(alocar.getIdEvento()).getFim());
+				inicio.setTimeInMillis(validar.recuperarEvento(alocar.getIdEvento()).getInicio());
+				fim.setTimeInMillis(validar.recuperarEvento(alocar.getIdEvento()).getFim());
 
 				if (validar.recuperarEvento(alocar.getIdEvento()).getRepeticao() > 0) {
 
@@ -180,16 +180,16 @@ public class Validacao {
 							fim.add(Calendar.WEEK_OF_YEAR, ++i);
 						}
 
-						if (evento.getInicio().getTime() >= inicio.getTime().getTime()) {
-							if (evento.getFim().getTime() <= fim.getTime().getTime()) {
+						if (evento.getInicio() >= inicio.getTime().getTime()) {
+							if (evento.getFim() <= fim.getTime().getTime()) {
 								throw new RoomsAllocationException("A sala nao esta disponivel neste horario.");
 							}
 						}
 
 					}
 				} else {
-					if (evento.getInicio().after(validar.recuperarEvento(alocar.getIdEvento()).getInicio())) {
-						if (evento.getInicio().before(validar.recuperarEvento(alocar.getIdEvento()).getFim())) {
+					if (evento.getInicio()>(validar.recuperarEvento(alocar.getIdEvento()).getInicio())) {
+						if (evento.getInicio()<(validar.recuperarEvento(alocar.getIdEvento()).getFim())) {
 							throw new RoomsAllocationException("A sala nao esta disponivel neste horario.");
 						}
 					}

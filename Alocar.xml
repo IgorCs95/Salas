@@ -1,0 +1,14 @@
+<list>
+  <entidades.Alocar>
+    <idEvento>EV-05</idEvento>
+    <idSala>SA-02</idSala>
+  </entidades.Alocar>
+  <entidades.Alocar>
+    <idEvento>EV-07</idEvento>
+    <idSala>SC-01</idSala>
+  </entidades.Alocar>
+  <entidades.Alocar>
+    <idEvento>EV-08</idEvento>
+    <idSala>LAB-01</idSala>
+  </entidades.Alocar>
+</list>

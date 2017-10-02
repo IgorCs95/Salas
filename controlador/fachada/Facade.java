@@ -8,10 +8,18 @@ import manipuladores.ManipuladorSistema;
 
 public class Facade implements IFacadeRoomsAllocation {
 
-	ManipulacaoXml a = new ManipulacaoXml();
+	ManipulacaoXml a = ManipulacaoXml.getInstace();
 	ManipuladorSalas gerenciarSalas = new ManipuladorSalas(a);
 	ManipuladorEventos gerenciarEventos = new ManipuladorEventos(a);
 	ManipuladorSistema gerenciarSistema = new ManipuladorSistema(a);
+	
+	
+	private static Facade fachada;
+	
+	private Facade() {
+	}
+	
+	
 
 	public void zerarSistema() {
 		gerenciarSistema.zerarSistema();
@@ -129,5 +137,20 @@ public class Facade implements IFacadeRoomsAllocation {
 			throw new RoomsAllocationException(e.getMessage());
 		}
 	}
+	
+	
+	public static Facade getInstance(){
+		if(fachada!=null){
+			return fachada;
+		}else
+			synchronized (Facade.class) {
+				if(fachada!=null){
+					return fachada;
+				}else
+					return new Facade();
+				
+			}
+	}
+	
 
 }

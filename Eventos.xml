@@ -1,0 +1,83 @@
+<list>
+  <entidades.Evento>
+    <id>EV-01</id>
+    <nome>Disciplina Sistema de Informacao I</nome>
+    <area>computacao</area>
+    <contato>Prof. Hyggo</contato>
+    <inicio>1330794000000</inicio>
+    <fim>1330801140000</fim>
+    <repeticao>11</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-05</id>
+    <nome>Trabalho da Disciplina Inteligencia Artificial</nome>
+    <area>biologia</area>
+    <contato>Profa. Maria</contato>
+    <inicio>1330966800000</inicio>
+    <fim>1330974000000</fim>
+    <repeticao>0</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-06</id>
+    <nome>Reuniao dos professores</nome>
+    <area>computacao</area>
+    <contato>Profa. Lourdes</contato>
+    <inicio>1330956000000</inicio>
+    <fim>1330959600000</fim>
+    <repeticao>0</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-07</id>
+    <nome>WDCOPIN 2012</nome>
+    <area>computacao</area>
+    <contato>Profa. Ana</contato>
+    <inicio>1330966800000</inicio>
+    <fim>1330988340000</fim>
+    <repeticao>0</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-08</id>
+    <nome>Defesa de Doutorado</nome>
+    <area>quimica</area>
+    <contato>Prof. Carlos</contato>
+    <inicio>1331038800000</inicio>
+    <fim>1331045940000</fim>
+    <repeticao>0</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-09</id>
+    <nome>Defesa de Mestrado</nome>
+    <area>fisica</area>
+    <contato>Prof. Hyggo</contato>
+    <inicio>1331058600000</inicio>
+    <fim>1331071140000</fim>
+    <repeticao>0</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-10</id>
+    <nome>Disciplina Arquitetura de Computadores II</nome>
+    <area>computacao</area>
+    <contato>Prof. Hyggo</contato>
+    <inicio>1330887600000</inicio>
+    <fim>1330894740000</fim>
+    <repeticao>11</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-11</id>
+    <nome>Disciplina Arquitetura de Computadores III</nome>
+    <area>computacao</area>
+    <contato>Prof. Jose</contato>
+    <inicio>1331233200000</inicio>
+    <fim>1331240340000</fim>
+    <repeticao>11</repeticao>
+  </entidades.Evento>
+  <entidades.Evento>
+    <id>EV-12</id>
+    <nome>Disciplina Arquitetura de Computadores III</nome>
+    <area>computacao</area>
+    <contato>Prof. Evandro</contato>
+    <inicio>1331319600000</inicio>
+    <fim>1331326740000</fim>
+    <repeticao>11</repeticao>
+  </entidades.Evento>
+</list>

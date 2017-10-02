@@ -17,7 +17,7 @@ public class PrincipalConsole {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 
-		Facade fachada = new Facade();
+		Facade fachada = Facade.getInstance();
 
 		boolean roda = true;
 		System.out.println(" 	Programa iniciado.");

@@ -29,9 +29,9 @@ adicionarSala id=LAB-02 capacidade=25 finalidade="Laboratorio" tipo="fisica" ape
 
 adicionarSala id=LAB-04 capacidade=25 finalidade="Laboratorio" tipo="biologia" apelido="Laboratorio de Visao Computacional" 
 
-adicionarSala id=LAB-05 capacidade=25 finalidade="Laboratorio" tipo="computacao" apelido="Laboratorio da pos graduacao" aberto=sim
+adicionarSala id=LAB-05 capacidade=25 finalidade="Laboratorio" tipo="computacao" apelido="Laboratorio da pos graduacao" aberto="true"
 
-adicionarSala id=LAB-06 capacidade=25 finalidade="Laboratorio" tipo="computacao" apelido="Laboratorio de alunos" aberto=nao
+adicionarSala id=LAB-06 capacidade=25 finalidade="Laboratorio" tipo="computacao" apelido="Laboratorio de alunos" aberto="false"
 
 
 

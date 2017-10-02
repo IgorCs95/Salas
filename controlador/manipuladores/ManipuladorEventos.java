@@ -49,8 +49,7 @@ public class ManipuladorEventos {
 	 * @throws RoomsAllocationException
 	 *             erro equivalente.
 	 */
-	public void adicionarEvento(String id, String nome, String inicio, String fim, String area, String contato,
-			int repeticoes) throws RoomsAllocationException {
+	public void adicionarEvento(String id, String nome, String inicio, String fim, String area, String contato,int repeticoes) throws RoomsAllocationException {
 
 		try {
 			ValidarEvento.finalidadeEvento(id, nome, inicio, fim, area, contato, repeticoes);
@@ -72,7 +71,7 @@ public class ManipuladorEventos {
 			horaInicio = new Date(formato.parse(inicio).getTime());
 			horaFim = new Date(formato.parse(fim).getTime());
 
-			eventosDao.salvarEvento(new Evento(id, nome, horaInicio, horaFim, area, contato, repeticoes));
+			eventosDao.salvarEvento(new Evento(id, nome, horaInicio.getTime(), horaFim.getTime(), area, contato, repeticoes));
 
 		} catch (ParseException e) {
 			throw new RoomsAllocationException(e.getMessage());
@@ -122,8 +121,10 @@ public class ManipuladorEventos {
 
 			horaInicio = new Date(formato.parse(inicio).getTime());
 			horaFim = new Date(formato.parse(fim).getTime());
+			
+		
 
-			eventosDao.salvarEvento(new Evento(id, nome, horaInicio, horaFim, area, contato));
+			eventosDao.salvarEvento(new Evento(id, nome, horaInicio.getTime(), horaFim.getTime(), area, contato));
 
 		} catch (ParseException e) {
 			throw new RoomsAllocationException(e.getMessage());

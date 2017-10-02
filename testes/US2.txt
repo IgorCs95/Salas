@@ -66,6 +66,7 @@ expectError "Ja existe evento com esta identificacao." adicionarEvento id=EV-04 
 expectError "Intervalo de datas invalido." adicionarEvento id=EV-10 nome="Disciplina" inicio="03/03/2012 14:00" fim="03/03/2012 10:00" area="computacao" contato="Prof. Hyggo"
 
 # As datas devem referenciar o mesmo dia.
+
 expectError "Intervalo de datas invalido." adicionarEvento id=EV-10 nome="Disciplina" inicio="03/03/2012 14:00" fim="04/03/2012 10:00" area="computacao" contato="Prof. Hyggo"
 
 expectError "Intervalo de datas invalido." adicionarEvento id=EV-10 nome="Disciplina" inicio="" fim="03/03/2012 10:00" area="computacao" contato="Prof. Hyggo"
